@@ -1,0 +1,63 @@
+<div class="navbar-area">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" [class.active]="classApplied">
+            <!--Logo-->
+            <a class="navbar-brand" href="">
+                <img src="images/logo.png" alt="Logo" width="120" height="120">
+            </a>
+            <button class="navbar-toggler" type="button" (click)="toggleClass()">
+                <span class="burger-menu">
+                    <span class="top-bar"></span>
+                    <span class="middle-bar"></span>
+                    <span class="bottom-bar"></span>
+                </span>
+            </button>
+            <!--Menu-->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Reserva
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav for-responsive">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Reserva
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+                <!--Formulario busqueda-->
+                <div class="others-option">
+                    <form class="search-box" action="">
+                        <input type="text" name="Buscar" placeholder="Buscar" class="form-control">
+                        <button type="submit" class="search-btn">
+                            <i class="ri-search-line"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<!--Search Page-->
+<div class="page-title-area bg-1 ptb-100">
+    <div class="container">
+        <div class="page-title-content">
+            <h2>Alojamientos en cualquier parte del mundo</h2>
+            <p>Buscar alojamiento</p>
+            <form class="banner-form-style" action="">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-6 col-sm-5">
+                        <div class="form-group">
+                            <label for="">Destino</label>
+                            <input type="text" class="form-control" placeholder="¿Dónde quieres ir?">
+                            <img src="images/icon/search.svg" alt="Buscar">
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-sm-5">
+                        <div class="form-group">
+                            <label for="">Fecha de Entrada</label>
+                            <dp-date-picker theme="dp-material" placeholder="Ingresar fecha" [config]="datePickerConfig" required="true"></dp-date-picker>
+                            <img src="images/icon/calendar.svg" alt="Calendario">
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-sm-5">
+                        <div class="form-group">
+                            <label for="">Fecha de Salida</label>
+                            <dp-date-picker theme="dp-material" placeholder="Ingresar fecha" [config]="datePickerConfig" required="true"></dp-date-picker>
+                            <img src="images/icon/calendar.svg" alt="Calendario">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="form-group">
+                            <label for="">Quiénes</label>
+                            <input type="text" class="form-control" placeholder="¿Cuántos?">
+                            <img src="images/icon/user-check.svg" alt="Personas">
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-1">
+                        <div class="form-group ps-0 pe-0">
+                            <button type="submit" class="src-btn">
+                                <i class="ri-search-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--Stay Listing-->
+ <app-stay-listing></app-stay-listing>
